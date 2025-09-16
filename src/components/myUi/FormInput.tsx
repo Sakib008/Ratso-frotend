@@ -48,7 +48,7 @@ const FormInput = forwardRef<HTMLInputElement, Props>(
           id={name}
           className={cn(
             // Base styles
-            "w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm",
+            "w-full px-3 py-2 border border-white/20 rounded-md shadow-sm",
             // Focus styles
             "focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500",
             // Dark mode styles

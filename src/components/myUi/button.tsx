@@ -6,7 +6,7 @@ interface Props {
   functionOnClick?: () => void;
   buttonClassName?: string;
 }
-const button: React.FC<Props> = ({
+const Button: React.FC<Props> = ({
   nameOfTheButton,
   functionOnClick,
   buttonClassName,
@@ -21,4 +21,4 @@ const button: React.FC<Props> = ({
   );
 };
 
-export default button;
+export default Button;
