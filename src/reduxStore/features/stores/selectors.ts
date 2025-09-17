@@ -1,5 +1,6 @@
-import { RootState } from '../../store';
+import type { RootState } from '../../store';
 import { StoreStatus } from '../../../types/store';
+
 
 // Store selectors
 export const selectStores = (state: RootState) => state.stores;
