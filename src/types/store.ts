@@ -1,5 +1,11 @@
 // Store status enum based on backend
-export type StoreStatus = 'PENDING' | 'APPROVED' | 'REJECTED';
+export const StoreStatus = {
+  APPROVED: "APPROVED",
+  PENDING: "PENDING",
+  REJECTED: "REJECTED",
+} as const;
+
+export type StoreStatus = typeof StoreStatus[keyof typeof StoreStatus];
 
 // Store interface
 export interface Store {
@@ -7,7 +13,6 @@ export interface Store {
   name: string;
   description: string;
   address: string;
-  category?: string;
   email?: string;
   image?: string;
   status: StoreStatus;
