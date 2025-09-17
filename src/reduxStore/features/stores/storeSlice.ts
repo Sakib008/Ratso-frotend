@@ -5,8 +5,8 @@ import  type {
   CreateStorePayload,
   UpdateStorePayload,
   StoreFilters,
-  StoreStatus,
 } from '../../../types/store';
+import { StoreStatus } from '../../../types/store';
 import { storeApi } from '../../../api/storeApi';
 import type { LoadingState, AsyncSliceState } from '../../../types/api';
 
@@ -37,7 +37,7 @@ interface StoreState extends AsyncSliceState<Store> {
 const initialState: StoreState = {
   items: [],
   currentItem: null,
-  loading: 'idle',
+  loading: 'idle' as LoadingState,
   error: null,
   totalCount: 0,
   currentPage: 1,
