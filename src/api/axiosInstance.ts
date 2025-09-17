@@ -1,5 +1,6 @@
-import axios, { AxiosInstance, AxiosResponse, AxiosError } from 'axios';
-import { ApiResponse, ApiError } from '../types/api';
+import axios from 'axios';
+import type { AxiosInstance, AxiosResponse, AxiosError } from 'axios';
+import type { ApiResponse, ApiError } from '../types/api';
 
 // Create axios instance configured for cookie-based authentication
 const axiosInstance: AxiosInstance = axios.create({
